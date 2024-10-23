@@ -1,0 +1,91 @@
+.leads-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  
+    .leads-card {
+      width: 100%;
+      max-width: 1200px; 
+      background-color: white;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      padding: 32px; 
+      
+      .leads-title {
+        font-size: 24px;
+        font-weight: 600; 
+        text-align: center;
+        margin-bottom: 24px; 
+      }
+  
+      .leads-table {
+        width: 100%;
+        border-collapse: collapse;
+        
+        .table-header {
+          background-color: #4F46E5; 
+          color: white;
+  
+          .table-header-cell {
+            padding: 12px;
+            text-align: left;
+            font-size: 12px; 
+            font-weight: 600; 
+            text-transform: uppercase; 
+            letter-spacing: 0.1em; 
+          }
+        }
+  
+        .table-row {
+          border-bottom: 1px solid #E5E7EB; 
+          
+          &:hover {
+            background-color: #F3F4F6; 
+          }
+  
+          .table-cell {
+            padding: 16px; 
+            white-space: nowrap; 
+            font-size: 14px; 
+  
+            &.name {
+              font-weight: 500;
+              color: #111827; 
+            }
+  
+            &:not(.name) {
+              color: #6B7280; 
+            }
+          }
+        }
+      }
+    }
+  }
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px; // Adjust as needed
+  
+    .pagination-button {
+      margin: 0 4px; // Space between buttons
+      padding: 8px 12px;
+      border: 1px solid #4F46E5; // Border color
+      background-color: white;
+      color: #4F46E5; // Text color
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.2s;
+  
+      &:hover {
+        background-color: #E5E7EB; // Background color on hover
+      }
+  
+      &.active {
+        background-color: #4F46E5; // Active page button color
+        color: white; // Active text color
+        font-weight: bold; // Make active button bold
+      }
+    }
+  }
+  
