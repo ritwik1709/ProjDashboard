@@ -53,7 +53,7 @@ export default function SalesDynamicChart() {
          </ResponsiveContainer>
        </div>
        
-       <div className="flex items-center gap-6 mt-4 border-t border-gray-100 pt-4">
+       <div className="flex flex-wrap items-center gap-4 mt-4 border-t border-gray-100 pt-4">
            <div className="flex items-center gap-2">
               <div className="w-6 h-6 rounded-full bg-orange-100 flex items-center justify-center">
                  <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Eren" alt="Eren" className="w-4 h-4 rounded-full"/>
