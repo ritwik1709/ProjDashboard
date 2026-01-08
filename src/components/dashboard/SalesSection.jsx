@@ -6,30 +6,32 @@ export default function SalesSection() {
   return (
     <div className="space-y-6">
        {/* Sales Table */}
-       <div className="space-y-4">
-          <div className="flex items-center text-xs text-gray-400 px-2">
-             <span className="w-1/4">Sales</span>
-             <span className="w-1/6 text-right">Revenue</span>
-             <span className="w-1/6 text-right">Leads</span>
-             <span className="w-1/6 text-right">KPI</span>
-             <span className="w-1/6 text-right">W/L</span>
+       <div className="overflow-x-auto pb-2">
+          <div className="space-y-4 min-w-[600px]">
+              <div className="flex items-center text-xs text-gray-400 px-2">
+                 <span className="w-1/4">Sales</span>
+                 <span className="w-1/6 text-right">Revenue</span>
+                 <span className="w-1/6 text-right">Leads</span>
+                 <span className="w-1/6 text-right">KPI</span>
+                 <span className="w-1/6 text-right">W/L</span>
+              </div>
+              
+              <SalesRow 
+                 name="Armin A." 
+                 rev="$209,633" 
+                 leads="41" leadsTotal="118" 
+                 kpi="0.84" 
+                 wl="31%" wlTotal="12" 
+                 active 
+              />
+               <SalesRow 
+                 name="Mikasa A." 
+                 rev="$156,841" 
+                 leads="54" leadsTotal="103" 
+                 kpi="0.89" 
+                 wl="39%" wlTotal="21" 
+              />
           </div>
-          
-          <SalesRow 
-             name="Armin A." 
-             rev="$209,633" 
-             leads="41" leadsTotal="118" 
-             kpi="0.84" 
-             wl="31%" wlTotal="12" 
-             active 
-          />
-           <SalesRow 
-             name="Mikasa A." 
-             rev="$156,841" 
-             leads="54" leadsTotal="103" 
-             kpi="0.89" 
-             wl="39%" wlTotal="21" 
-          />
        </div>
        
        {/* Pills */}
@@ -46,7 +48,7 @@ export default function SalesSection() {
        {/* Work with platforms */}
        <div className="mt-6">
           <h3 className="text-sm font-bold text-gray-800 mb-3">Work with platforms</h3>
-          <Card className="p-4 grid grid-cols-2 gap-4">
+          <Card className="p-4 grid grid-cols-1 md:grid-cols-2 gap-4">
              {/* Big Dribbble Block */}
              <div className="col-span-1">
                 <div className="flex items-center gap-2 mb-4">
