@@ -1,0 +1,58 @@
+﻿
+> dashboard@0.0.0 build
+> vite build
+
+[36mvite v7.3.1 [32mbuilding client environment for production...[36m[39m
+transforming...
+[32mΓ£ô[39m 3 modules transformed.
+node.exe : [31mΓ£ù[39m Build failed in 
+350ms
+At line:1 char:1
++ & "C:\Program Files\nodejs/node.exe" 
+"C:\Users\ritwi\AppData\Roaming\ ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecifie 
+   d: ([31mΓ£ù[39m Build failed in 350  
+  ms:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeComma 
+   ndError
+ 
+[31merror during build:
+[31m[vite:css] [postcss] It looks like 
+you're trying to use `tailwindcss` 
+directly as a PostCSS plugin. The PostCSS 
+plugin has moved to a separate package, 
+so to continue using Tailwind CSS with 
+PostCSS you'll need to install 
+`@tailwindcss/postcss` and update your 
+PostCSS configuration.[31m
+file: [36mF:/dashboard/src/index.css:unde
+fined:NaN[31m
+    at lt (F:\dashboard\node_modules\tailw
+indcss\dist\lib.js:38:1643)
+    at LazyResult.runOnRoot (F:\dashboard\
+node_modules\postcss\lib\lazy-result.js:36
+1:16)
+    at LazyResult.runAsync (F:\dashboard\n
+ode_modules\postcss\lib\lazy-result.js:290
+:26)
+    at async runPostCSS (file:///F:/dashbo
+ard/node_modules/vite/dist/node/chunks/con
+fig.js:30145:19)
+    at async compilePostCSS (file:///F:/da
+shboard/node_modules/vite/dist/node/chunks
+/config.js:30129:6)
+    at async compileCSS (file:///F:/dashbo
+ard/node_modules/vite/dist/node/chunks/con
+fig.js:30059:26)
+    at async Object.handler (file:///F:/da
+shboard/node_modules/vite/dist/node/chunks
+/config.js:29592:54)
+    at async transform (file:///F:/dashboa
+rd/node_modules/rollup/dist/es/shared/node
+-entry.js:21283:16)
+    at async ModuleLoader.addModuleSource 
+(file:///F:/dashboard/node_modules/rollup/
+dist/es/shared/node-entry.js:21497:36)[39
+m
